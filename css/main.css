@@ -1,0 +1,546 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/* * What follows is the result of much research on cross-browser styling. * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal, * Kroc Camen, and the H5BP dev community and team. */
+/* ========================================================================== Base styles: opinionated defaults ========================================================================== */
+@font-face {
+    font-family: 'Arabic Amiri';
+        src: url('../font/Amiri-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+ html {
+     color: rgba(12, 12, 12, .6);
+     font-size: 1em;
+     line-height: 1.4;
+     background-color: #0c0c0c;
+     background-image: url(../img/tile.png);
+     background-repeat: repeat;
+     background-attachment: fixed;
+     cursor: url(cur/altinimlec.cur),auto;
+}
+/* * Remove text-shadow in selection highlight: * https://twitter.com/miketaylr/status/12228805301 * * These selection rule sets have to be separate. * Customize the background color to match your design. */
+ ::-moz-selection {
+	 color: rgba(22, 22, 22, .6);
+     background: transparent;
+     text-shadow: rgba(226, 234, 118, .5) 1px 1px 2px, rgba(226, 234, 118, .4) -1px 1px 2px,rgba(226, 234, 118, .5) 1px -1px 2px, rgba(226, 234, 118, .6) -1px -1px 2px;
+}
+ ::selection {
+	 color: rgba(22, 22, 22, .6);
+     background: transparent;
+     text-shadow: rgba(226, 234, 118, .5) 1px 1px 2px, rgba(226, 234, 118, .4) -1px 1px 2px,rgba(226, 234, 118, .5) 1px -1px 2px, rgba(226, 234, 118, .6) -1px -1px 2px;
+}
+
+a, a:hover {
+     text-decoration: none;
+    }
+    
+a {
+	color: darkblue;
+}
+
+a:hover {
+	color: blue;
+}
+    
+/* * A better looking default horizontal rule */
+ hr {
+     display: block;
+     height: 1px;
+     border: 0;
+     border-top: 1px solid #ccc;
+     margin: 1em 0;
+     padding: 0;
+}
+/* * Remove the gap between audio, canvas, iframes, * images, videos and the bottom of their containers: * https://github.com/h5bp/html5-boilerplate/issues/440 */
+ audio, canvas, iframe, img, svg, video {
+     vertical-align: middle;
+}
+/* * Remove default fieldset styles. */
+ fieldset {
+     border: 0;
+     margin: 0;
+     padding: 0;
+}
+/* * Allow only vertical resizing of textareas. */
+ textarea {
+     width: 100%;
+     resize: vertical;
+     font-weight: bold;
+     color: rgba(12, 12, 12, .4);
+     background-color: rgba(212, 212, 212, .1);
+     padding: 10px;
+     border: 0px;
+	 border-radius: 5px;
+	 cursor:  url(cur/infinityeldiveni.cur),auto;
+}
+ input {
+     font-weight: bold;
+     color: rgba(12, 12, 12, .4);
+     background-color: rgba(212, 212, 212, .1);
+     padding: 10px;
+     border: 0px;
+     border-radius: 5px;
+     cursor:  url(cur/infinityeldiveni.cur),auto;
+}
+
+ label {
+	cursor:  url(cur/infinityeldiveni.cur),auto;
+ }
+ 
+ ::-webkit-scrollbar-track {
+  cursor:  url(cur/infinityeldiveni.cur),auto;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  cursor:  url(cur/infinityeldiveni.cur),auto;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  cursor:  url(cur/infinityeldiveni.cur),auto;
+}
+
+ button {
+	padding: 5px;
+	border: 2px;
+	border-radius: 5px;
+	cursor:  url(cur/infinityeldiveni.cur),auto;
+ }
+
+/* ========================================================================== Browser Upgrade Prompt ========================================================================== */
+ .browserupgrade {
+     margin: 0.2em 0;
+     background: #ccc;
+     color: #000;
+     padding: 0.2em 0;
+}
+/* ========================================================================== Author's custom styles ========================================================================== */
+.video-container { opacity: .66; position: relative; padding-bottom: 45%; padding-top: 30px; height: 0; overflow: hidden; }
+
+.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+ 
+ img.theflag {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+    }
+ 
+ #progressbar {
+    color: lightyellow;
+    text-shadow: 1px 1px 2px rgb(200 155 200 / 66%), -1px -1px 2px rgb(200 155 200 / 66%);
+ }
+
+ .wider {
+	width: 100%;
+ }
+ 
+ .content {
+     margin: 20px 20px;
+     padding: 20px;
+     padding-right: 30px;
+     background-color: rgba(250, 185, 185, 0.35);
+     border-radius: 10px;
+     box-shadow: 2px 2px 2px 2px rgba(250, 185, 185, 0.35), inset 2px 2px 2px 2px rgba(20, 65, 20, 0.12);
+}
+ 
+ .accepted {
+     margin: 20px 20px;
+     padding: 20px;
+     padding-right: 30px;
+     background-color: rgba(185, 250, 185, 0.35);
+     border-radius: 10px;
+     box-shadow: 2px 2px 2px 2px rgba(185, 250, 185, 0.35), inset 2px 2px 2px 2px rgba(65, 20, 65, 0.12);
+}
+ .results {
+     margin: 20px 20px;
+     padding: 20px;
+     padding-right: 30px;
+     background-color: rgba(250, 250, 185, 0.35);
+     border-radius: 10px;
+     box-shadow: 2px 2px 2px 2px rgba(250, 250, 185, 0.35), inset 2px 2px 2px 2px rgba(20, 20, 65, 0.12);
+}
+
+ .content textarea, .content input {
+	box-shadow: 1px 1px 1px 1px rgba(250, 185, 250, 0.35), inset 1px 1px 1px 1px rgba(20, 65, 20, 0.12);
+}
+ 
+ .content button {
+	background-color: rgba(250, 185, 250, 0.35);
+}
+ 
+ .accepted textarea, .accepted input {
+	box-shadow: 1px 1px 1px 1px rgba(185, 250, 185, 0.35), inset 1px 1px 1px 1px rgba(65, 20, 65, 0.12);
+}
+ 
+ .accepted button {
+	background-color: rgba(185, 250, 185, 0.35);
+}
+
+ .results textarea .results input .results hr {
+	box-shadow: 1px 1px 1px 1px rgba(250, 250, 185, 0.35), inset 1px 1px 1px 1px rgba(20, 20, 65, 0.12);
+}
+ 
+.results button {
+	background-color: rgba(250, 250, 185, 0.35);
+}
+ 
+
+ p {
+     text-align: justify;
+}
+
+ .linker {
+     font-weight: bold;
+}
+
+ .linker:hover {
+     color: darkgreen;
+     cursor: pointer;
+}
+
+ .theader {
+     width: 1.8vw;
+     padding: 5px;
+     text-align: center;
+     vertical-align: middle;
+     font-weight: bold;
+     color: darknavy;
+     background-color: white;
+     border-radius: 6px;
+     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), inset 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+ .hucre {
+     width: 1.8vw;
+     padding: 5px;
+     text-align: center;
+     vertical-align: middle;
+     font-weight: bold;
+     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), inset 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+     border-radius: 2px;
+     color: darkred;
+     background-color: lightyellow;
+}
+
+ .testtableharf {
+	 width: 1.8vw;
+     padding: 5px;
+     text-align: center;
+     vertical-align: middle;
+     font-family: 'Arabic Amiri';
+     font-weight: bold;
+     background-color: rgba(155, 155, 200, 0.35);
+     border-radius: 5px;
+}
+
+ .testtableresult {
+	 width: 1.8vw;
+     padding: 5px;
+     text-align: center;
+     vertical-align: middle;
+     font-weight: bold;
+     border-radius: 5px;
+}
+
+ .hucre:hover, phrase:hover porder{
+     color: red;
+     background-color: white;
+     cursor:  url(cur/infinityeldiveni.cur),auto;
+}
+
+table.tablecodes tr td.testtableharf {
+	color: darkblue;
+	background-color: rgba(155, 155, 200, 0.5);
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), inset 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+table.tablecodes tr:hover td.testtableharf {
+	color: blue;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 200, 0.2), inset 0px 6px 20px 0px rgba(0, 0, 200, 0.19);
+}
+
+table.tablecodes tr td.testtableresult {
+	color: green;
+	background-color: rgba(155, 155, 200, 0.5);
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), inset 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+table.tablecodes tr:hover td.testtableresult {
+	color: lightgreen;
+	box-shadow: 0px 4px 8px 0px rgba(0, 200, 0, 0.2), inset 0px 6px 20px 0px rgba(0, 200, 0, 0.19);
+}
+
+ phrase {
+     display: inline-block;
+     white-space: nowrap;
+     overflow: none;
+     padding: 0px 5px 0px 0px;
+     margin: 5px 5px 0px 0px;
+     text-align: center;
+     vertical-align: middle;
+     font-family: 'Arabic Amiri';
+     font-weight: bold;
+     color: darkred;
+     background-color: lightyellow;
+     border-top-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), inset 0px 6px 10px 0px rgba(0, 0, 0, 0.19);
+}
+ porder {
+     display: inline-block;
+     white-space: nowrap;
+     padding: 5px 5px 5px 5px;
+     margin: 0px 5px 0px 0px;
+     text-align: center;
+     vertical-align: middle;
+     font-weight: bold;
+     color: darknavy;
+     background-color: rgba(155, 200, 155, 0.35);
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
+}
+
+ #halfta {
+     font-family: monospace;
+     font-size: inherit;
+}
+
+ pre #halfta {
+     display: block;
+     background: none;
+     white-space: pre;
+     -webkit-overflow-scrolling: touch;
+     overflow-x: scroll;
+     max-width: 100%;
+     min-width: 100px;
+     padding: 0;
+}
+
+.spinner div {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ccc;
+    background: rgba(200, 155, 200, 0.35);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+    text-align: center;
+    line-height: 120px;
+    font-size: 100px;
+}
+
+.spinner .face1 { 
+    -webkit-transform: translateZ(60px);
+    -ms-transform: translateZ(60px);
+    transform: translateZ(60px);
+}
+.spinner .face2 { 
+    -webkit-transform: rotateY(90deg) translateZ(60px); 
+    -ms-transform: rotateY(90deg) translateZ(60px); 
+    transform: rotateY(90deg) translateZ(60px); 
+}
+.spinner .face3 { 
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(60px); 
+    -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(60px); 
+    transform: rotateY(90deg) rotateX(90deg) translateZ(60px); 
+}
+.spinner .face4 { 
+    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px); 
+    -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px); 
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(60px); 
+}
+.spinner .face5 { 
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px); 
+    -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px); 
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px); 
+}
+.spinner .face6 { 
+    -webkit-transform: rotateX(-90deg) translateZ(60px); 
+    -ms-transform: rotateX(-90deg) translateZ(60px); 
+    transform: rotateX(-90deg) translateZ(60px); 
+}
+
+.spinner {
+    -webkit-animation: spincube 12s ease-in-out infinite;
+    animation: spincube 12s ease-in-out infinite;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 60px 60px 0;
+    -ms-transform-origin: 60px 60px 0;
+    transform-origin: 60px 60px 0;
+}
+
+@-webkit-keyframes spincube {
+    16%      { -webkit-transform: rotateY(-90deg);                }
+    33%      { -webkit-transform: rotateY(-90deg) rotateZ(90deg); }
+    50%      { -webkit-transform: rotateY(180deg) rotateZ(90deg); }
+    66%      { -webkit-transform: rotateY(90deg) rotateX(90deg);  }
+    83%      { -webkit-transform: rotateX(90deg);                 }
+}
+@keyframes spincube {
+    16%      { -ms-transform: rotateY(-90deg); transform: rotateY(-90deg); }
+    33%      { -ms-transform: rotateY(-90deg) rotateZ(90deg); transform: rotateY(-90deg) rotateZ(90deg); }
+    50%      { -ms-transform: rotateY(180deg) rotateZ(90deg); transform: rotateY(180deg) rotateZ(90deg); }
+    66%      { -ms-transform: rotateY(90deg) rotateX(90deg); transform: rotateY(90deg) rotateX(90deg); }
+    83%      { -ms-transform: rotateX(90deg); transform: rotateX(90deg); }
+}
+
+@-webkit-keyframes flipInY{
+    0%{
+        -webkit-animation-timing-function:ease-in;
+        animation-timing-function:ease-in;
+        opacity:0;
+        -webkit-transform:perspective(400px) rotateY(90deg);
+        transform:perspective(400px) rotateY(90deg)
+    }
+    40%{
+        -webkit-animation-timing-function:ease-in;
+        animation-timing-function:ease-in;
+        -webkit-transform:perspective(400px) rotateY(-20deg);
+        transform:perspective(400px) rotateY(-20deg)
+    }
+    60%{
+        opacity:1;
+        -webkit-transform:perspective(400px) rotateY(10deg);
+        transform:perspective(400px) rotateY(10deg)
+    }
+    80%{
+        -webkit-transform:perspective(400px) rotateY(-5deg);
+        transform:perspective(400px) rotateY(-5deg)
+    }
+    to{
+        -webkit-transform:perspective(400px);
+        transform:perspective(400px)
+    }
+}
+@keyframes flipInY{
+    0%{
+        -webkit-animation-timing-function:ease-in;
+        animation-timing-function:ease-in;
+        opacity:0;
+        -webkit-transform:perspective(400px) rotateY(90deg);
+        transform:perspective(400px) rotateY(90deg)
+    }
+    40%{
+        -webkit-animation-timing-function:ease-in;
+        animation-timing-function:ease-in;
+        -webkit-transform:perspective(400px) rotateY(-20deg);
+        transform:perspective(400px) rotateY(-20deg)
+    }
+    60%{
+        opacity:1;
+        -webkit-transform:perspective(400px) rotateY(10deg);
+        transform:perspective(400px) rotateY(10deg)
+    }
+    80%{
+        -webkit-transform:perspective(400px) rotateY(-5deg);
+        transform:perspective(400px) rotateY(-5deg)
+    }
+    to{
+        -webkit-transform:perspective(400px);
+        transform:perspective(400px)
+    }
+}
+.content, .accepted, .results, .animate__flipInY{
+    -webkit-animation-name:flipInY;
+    animation-name:flipInY;
+    -webkit-backface-visibility:visible!important;
+    backface-visibility:visible!important;
+    animation: flipInY; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+/* ========================================================================== Helper classes ========================================================================== */
+/* * Hide visually and from screen readers */
+ .hidden {
+     display: none !important;
+}
+/* * Hide only visually, but have it available for screen readers: * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+ .visuallyhidden {
+     border: 0;
+     clip: rect(0 0 0 0);
+     height: 1px;
+     margin: -1px;
+     overflow: hidden;
+     padding: 0;
+     position: absolute;
+     width: 1px;
+}
+/* * Extends the .visuallyhidden class to allow the element * to be focusable when navigated to via the keyboard: * https://www.drupal.org/node/897638 */
+ .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+     clip: auto;
+     height: auto;
+     margin: 0;
+     overflow: visible;
+     position: static;
+     width: auto;
+}
+/* * Hide visually and from screen readers, but maintain layout */
+ .invisible {
+     visibility: hidden;
+}
+/* * Clearfix: contain floats * * For modern browsers * 1. The space content is one way to avoid an Opera bug when the * `contenteditable` attribute is included anywhere else in the document. * Otherwise it causes space to appear at the top and bottom of elements * that receive the `clearfix` class. * 2. The use of `table` rather than `block` is only necessary if using * `:before` to contain the top-margins of child elements. */
+ .clearfix:before, .clearfix:after {
+     content: " ";
+    /* 1 */
+     display: table;
+    /* 2 */
+}
+ .clearfix:after {
+     clear: both;
+}
+/* ========================================================================== EXAMPLE Media Queries for Responsive Design. These examples override the primary ('mobile first') styles. Modify as content requires. ========================================================================== */
+ @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+ @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+/* ========================================================================== Print styles. Inlined to avoid the additional HTTP request: http://www.phpied.com/delay-loading-your-print-css/ ========================================================================== */
+ @media print {
+     *, *:before, *:after, *:first-letter, *:first-line {
+         background: transparent !important;
+         color: #000 !important;
+        /* Black prints faster: http://www.sanbeiji.com/archives/953 */
+         box-shadow: none !important;
+         text-shadow: none !important;
+    }
+     a, a:visited {
+         text-decoration: underline;
+    }
+     a[href]:after {
+         content: " (" attr(href) ")";
+    }
+     abbr[title]:after {
+         content: " (" attr(title) ")";
+    }
+    /* * Don't show links that are fragment identifiers, * or use the `javascript:` pseudo protocol */
+     a[href^="#"]:after, a[href^="javascript:"]:after {
+         content: "";
+    }
+     pre, blockquote {
+         border: 1px solid #999;
+         page-break-inside: avoid;
+    }
+    /* * Printing Tables: * http://css-discuss.incutio.com/wiki/Printing_Tables */
+     thead {
+         display: table-header-group;
+    }
+     tr, img {
+         page-break-inside: avoid;
+    }
+     img {
+         max-width: 100% !important;
+    }
+     p, h2, h3 {
+         orphans: 3;
+         widows: 3;
+    }
+     h2, h3 {
+         page-break-after: avoid;
+    }
+}
+ 
