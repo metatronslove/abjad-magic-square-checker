@@ -777,7 +777,7 @@ function begincalc() {
 						'background': 'linear-gradient(90deg, rgb(100,28,161,.6) 0%, rgb(76,20,116,.6) ' + String(parseFloat($("#progressbar").html().slice(0, -1)) - .1) + '%, rgb(100,28,161,0) ' + $("#progressbar").html().slice(0, -1) + '%, rgb(100,28,161,0) 100%)'
 					});
 					var timeleft = BigNumber(BigNumber(remaining).dividedBy(BigNumber($("input[name='moldinputfive']").val().toString()))).times(BigNumber($("input[name='moldinputone']").val().toString()).minus(BigNumber($("input[name='moldinputfive']").val().toString()))).toNumber();
-					var mileniums = BigNumber(Math.floor(timeleft / (1000 * 60 * 60 * 24 * 30 * 12 * 100 * 10))).toFixed();
+					var mileniums = BigNumber(Math.floor(BigNumber(timeleft).dividedBy(BigNumber(1000 * 60 * 60 * 24 * 30 * 12 * 1000)))).toFixed();
 					var ages = Math.floor(timeleft % (1000 * 60 * 60 * 24 * 30 * 12 * 100 * 10) / (1000 * 60 * 60 * 24 * 30 * 12 * 100));
 					var years = Math.floor(timeleft % (1000 * 60 * 60 * 24 * 30 * 12 * 100) / (1000 * 60 * 60 * 24 * 30 * 12));
 					var months = Math.floor(timeleft % (1000 * 60 * 60 * 24 * 30 * 12) / (1000 * 60 * 60 * 24 * 30));
