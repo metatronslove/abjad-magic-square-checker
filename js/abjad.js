@@ -1,7 +1,9 @@
-// Merhaba Sahur Özel'in Ebced Hesaplayan Makrolarının LibreOffice Basic  dilinden JavaScript diline çevirisidir. 
-// Konu hakkında daha geniş bilgi için go.abdil.one/6 adresinden ilgili Google Drive klasörüne erişebilirsiniz bu
-// kodlar  MIT,  Creative commons  ve  GPL  gibi lisanslarla değil; kullanıcılarının vicdanlarıyla korunmaktadır. 
-// Vicdansızları büyük yargı gününde Rab hesaba çeker. 2023 ÖNEMLİ => https://github.com/metatronslove/abjad
+// Merhaba Sahur Özel'in Ebced Hesaplayan Makrolarının LibreOffice Basic
+// dilinden JavaScript diline çevirisidir. Konu hakkında daha geniş bil-
+// gi için go.abdil.one/6 adresinden ilgili Google Drive klasörüne eri-
+// şebilirsiniz bu kodlar MIT, Creative commons ve GPL gibi lisanslarla
+// değil; kullanıcılarının vicdanlarıyla korunmaktadır. Vicdansızları
+// büyük yargı gününde rab hesaba çeker.
 function abjad(metin, tablo, shadda, detail) {
 	var sm, s, n, shaddie, counter, err, space, hrk, sn, choosen, nitem, c;
 	sm = 0;
@@ -3203,6 +3205,10 @@ function abjad(metin, tablo, shadda, detail) {
 				case 4:
 				case 10:
 				case 15:
+				case 20:
+				case 25:
+				case 30:
+				case 35:
 					if (detail == 1 && shadda == undefined || detail == 1 && shadda !== undefined) {
 						sn = sn + " \+" + ((metin.length - n) + shaddie).toString() + " ";
 					} else {
